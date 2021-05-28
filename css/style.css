@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Store All Colors in Variables */
+.light-theme{
+    --primary:#fff; 
+    --secondary:whitesmoke;
+    --main: #54c75b; 
+    --font: #000; 
+    --pure-light: #fff; 
+}
+
+.dark-theme{
+    --primary:#121212; 
+    --secondary:#0b0b0b;  
+    --main: #54c75b; 
+    --font: #fff; 
+    --pure-light: #fff; 
+}
+
+/* Normalization - Start 
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    -webkit-font-smoothing: antialiased; 
+    background: var(--primary);
+    color: var(--font); 
+}
+
+/* Normalization - Ends */
+
+/* Define Width of Container */
+
+.wrapper{
+    width: 1192px;
+    max-width: 90%;
+    margin: 0 auto; 
+
+    /* background-color: var(--primary); */
+}
+
+/* Navigation Bar Design */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--main); 
+    padding: 15px 0px; 
+}
+
+/* Styling Unordered List */
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;  
+}
+
+nav ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--font); 
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover{
+    color: var(--main); 
+    transition: all 0.5s ease-in-out; 
+}
+
+nav ul li select{
+    display: inline-block;
+    height: 30px;
+    width: 150px; 
+    padding: 2px 10px;
+    outline: none; 
+    color: var(--font); 
+    border: none; 
+    background: var(--secondary); 
+    border-radius: 4px; 
+}
+
+/* Styling Header Section */
+
+header{  
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+header p{
+    font-size: 1.3rem;
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.header-content{
+    margin-top: 8.5rem; 
+}
+
+header button{
+    margin-top: 2rem; 
+    padding: 10px 30px; 
+    background: var(--main); 
+    color: var(--pure-light);
+    border-radius: 50px;
+    border: none; 
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    /* Button Animation Properties */
+
+    animation-name: main-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Keyframe for Button Animation */
+
+@keyframes main-animation {
+    from{
+        transform: translateY(0);
+    }    
+
+    to{
+        transform: translateY(10px);
+    }
+}
+
+header button:hover{
+    background-color: var(--main);
+    color: var(--font); 
+    transition: all 0.5s ease-in-out;
+}
+
+header .header-image img{
+    border-radius: 6px;
+    margin-top: 2.5rem; 
+
+    animation-name: main-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.features{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.features h1{
+    font-weight: 500;
+    font-size: 60px; 
+    margin-right: 25px;
+    margin-top: 25px; 
+    text-transform: uppercase;
+}
+
+.features h1 a{
+    color: var(--font); 
+    text-decoration: none;
+}
+
+.features h1 a:hover{
+    cursor: pointer;
+    color: var(--main); 
+    transition: all 0.5s ease-in-out;  
+}
+
+
+
+/*Hero Section Ends, 
+  Secondary Section Begins */ 
+
+section.info{
+    background: var(--secondary);
+    padding: 2rem;
+    height: 1200px;
+    margin-top: 100px;
+}
+
+.logos{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px; 
+}
+
+.logos img{
+    animation-name: main-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.info-logos{
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.logos h2{
+    margin-left: 20px;
+    margin-top: 45px; 
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.logos h2:hover{
+    color: var(--main); 
+    transition: all 0.5s ease-in-out;
+}
+
+#infoimage{
+    margin-right: 100px; 
+}
+
+#authenticimage{
+    margin-left: 300px;
+}
+
+#unbiasedimage{
+    margin-right: 250px;
+}
+
+/* footer section starts */
+
+footer.end{
+    /* margin-top: 50px; */
+    height: 530px;
+}
+
+.footer-links{
+    margin-top: 50px;
+}
+
+.footer-links ul{
+    margin-left: 250px;
+}
+
+.footer-links ul h2{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    font-size: 250%; 
+    text-transform: uppercase;
+    
+}
+
+.footer-links ul h2 li{
+    list-style-type: none;
+}
+
+.footer-links ul h2 li a{
+    text-decoration: none;
+    color: var(--font); 
+    margin-left: 15px;
+}
+
+.footer-links ul h2 li a:hover{
+    color: var(--main); 
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-image img{
+    margin-top: 20px;
+    margin-left: 450px; 
+    border-radius: 8px;
+
+    height: 300px;
+    width: 300px;
+
+    animation-name: main-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.list-items{
+    display: flex; 
+    align-items: center;
+    list-style-type: none;
+    margin-top: 15px; 
+    margin-left: 25px; 
+}
+
+.list-items li a{
+    color: var(--font); 
+    align-items: center;
+    size: 250%; 
+
+    margin-left: 15px;
+}
+
+.list-items li a:hover{
+    color: var(--main); 
+    transition: all 0.5s ease-in-out;
+}
+
+.social{
+    margin-left: 500px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.social h3{
+    margin-left: -10px;  
+}
