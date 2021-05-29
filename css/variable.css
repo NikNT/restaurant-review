@@ -1,0 +1,16 @@
+/* Store All Colors in Variables */
+.light-theme{
+    --primary:#fff; 
+    --secondary:whitesmoke;
+    --main: #54c75b; 
+    --font: #000; 
+    --pure-light: #fff; 
+}
+
+.dark-theme{
+    --primary:#121212; 
+    --secondary:#0b0b0b;  
+    --main: #54c75b; 
+    --font: #fff; 
+    --pure-light: #fff; 
+}

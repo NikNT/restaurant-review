@@ -1,4 +1,6 @@
-const switcher = document.querySelector('#theme-switch');
+//Logic - Theme Switcher 
+
+const switcher = document.querySelector('.theme-switch');
 
 const defaultTheme = localStorage.getItem('theme') || 'light-theme'; 
 setTheme(defaultTheme); 
