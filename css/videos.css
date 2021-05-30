@@ -1,0 +1,34 @@
+/* Header Section */
+
+header .jumbotron #videoheaderimage{
+    width: 100%;
+    height: 90%;
+}
+
+.jumbotron .header-text h1{
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+/*Section Styling*/
+
+section h3:hover{
+    cursor: pointer;
+    color: var(--main);
+    transition: all 0.5s ease-in-out;
+}
+
+
+iframe{
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+
+    width: 560px;
+    height: 315px;
+}
+
+iframe:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}

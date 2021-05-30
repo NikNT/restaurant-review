@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 3000px;
 }
@@ -17,8 +21,8 @@ header .jumbotron{
 
 header .jumbotron .header-text{
     position: absolute;
-    top: 150px; 
-    left: 200px; 
+    top: 180px; 
+    left: 300px; 
     transform: translate(-50%, -50%);
     text-transform: uppercase;
 
@@ -40,11 +44,11 @@ section h3{
     margin-top: 20px; 
 }
 
-section h3:hover{
+/* section h3:hover{
     color: var(--main); 
     transition: all 0.5s ease-in-out;
     cursor: pointer;
-}
+} */
 
 section .card{
     width: 50%; 
@@ -75,12 +79,18 @@ section .card img{
 
 section .card .card-str:hover .review-info{
     display: block;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 section .card .card-str:hover{
     transform: translateY(-10px);
-    transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045); 
+    transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+section .card .card-str:hover h3{
+    color: var(--main); 
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 footer{
