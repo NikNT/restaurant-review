@@ -1,0 +1,87 @@
+body{
+    height: 900px;
+}
+
+#header-text-feedback{
+margin-left: -100px;
+}
+
+section .intro{
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+    animation-name: main-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.feedbackSection{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.inputContent, .outputContent{
+    border: 5px solid var(--font); 
+    border-radius: 8px;
+    width: 450px;
+    height: 400px;
+    background-color: var(--secondary);
+}
+
+textarea{
+    margin: 10px 5px 5px 10px;
+    border-radius: 9px;
+    padding: 10px 15px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    height: 200px;
+}
+
+.inputContent{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    margin: 10px 5px 5px 10px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+}
+
+::placeholder{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button{
+    padding: 10px 75px;
+    border-radius: 4px; 
+    background-color: var(--main);
+    margin: 10px 10px 10px 10px;
+    color: var(--font); 
+    outline: none;
+}
+
+
+h1{
+    color: var(--main); 
+    margin-bottom: 10px;
+    margin-top: 10px; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    font-weight: 500;
+}
